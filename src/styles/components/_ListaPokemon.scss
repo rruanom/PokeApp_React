@@ -1,0 +1,10 @@
+.listaPokemon {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    &>section{
+        width: 100%;
+    }
+}

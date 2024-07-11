@@ -1,0 +1,102 @@
+.pokeCard {
+    max-width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+  }
+  .pokeCard img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    margin: 10px 0;
+  }
+  .pokeCard .pokeId,
+  .pokeCard .pokeName,
+  .pokeCard .pokeType {
+    margin: 8px 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  .pokeCard .pokeName {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+.type-normal {
+    border-color: #F2F1F0;
+    background-color: antiquewhite;
+  }
+.type-fire {
+    border-color: #F2F1F0;
+    background-color: #F08030;
+  }
+.type-water {
+    border-color: #F2F1F0;
+    background-color: #6890F0;
+  }
+.type-electric {
+    border-color: #F2F1F0;
+    background-color: #F8D030;
+  }
+.type-grass {
+    border-color: #F2F1F0;
+    background-color: #78C850;
+  }
+.type-ice {
+    border-color: #F2F1F0;
+    background-color: #98D8D8;
+  }
+.type-fighting {
+    border-color: #F2F1F0;
+    background-color: #C03028;
+  }
+.type-poison {
+    border-color: #F2F1F0;
+    background-color:  #A040A0;
+  }
+.type-ground {
+    border-color: #F2F1F0;
+    background-color:  #E0C068;
+  }
+.type-flying {
+    border-color: #F2F1F0;
+    background-color:  #A890F0;
+  }
+.type-psychic {
+    border-color: #F2F1F0;
+    background-color:  #F85888;
+  }
+.type-bug {
+    border-color: #F2F1F0;
+    background-color:  #A8B820;
+  }
+.type-rock {
+    border-color: #F2F1F0;
+    background-color:  #B8A038;
+  }
+.type-ghost {
+    border-color: #F2F1F0;
+    background-color:  #705898;
+  }
+.type-dragon {
+    border-color: #F2F1F0;
+    background-color:  #7038F8;
+  }
+.type-dark {
+    border-color: #F2F1F0;
+    background-color:  #705848;
+  }
+.type-steel {
+    border-color: #F2F1F0;
+    background-color:  #B8B8D0;
+  }
+.type-fairy {
+    border-color: #F2F1F0;
+    background-color:  #EE99AC;
+  }
+.type-unknown {
+    border-color: #F2F1F0;
+    background-color:  #808080;
+  }

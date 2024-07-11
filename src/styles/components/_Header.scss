@@ -1,0 +1,19 @@
+@import '../utils/mixins.scss';
+@import '../utils/variables.scss';
+
+.header {
+    @include centered-content;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: gray;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: gray;
+    font-size: larger;
+    font-style: bold;
+}

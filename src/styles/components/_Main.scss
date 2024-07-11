@@ -1,0 +1,19 @@
+@import '../utils/mixins.scss';
+@import '../utils/variables.scss';
+
+.main{
+    text-align: center;
+    &>h1{
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        color: #FFDE00;
+        text-shadow: 
+          -2px -2px 0 #3B4CCA,
+          2px -2px 0 #3B4CCA,
+          -2px 2px 0 #3B4CCA,
+          2px 2px 0 #3B4CCA;
+        font-size: 48px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}

@@ -17,7 +17,7 @@ const ListaPokemon = ({ pokeList }) => {
       }
   }, [pokeList]);
 
-  return <section>
+  return <section className="listaPokemon">
     {renderItems}
   </section>
 };

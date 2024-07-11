@@ -11,8 +11,12 @@ const Home = () => {
   }
 
   return <section className="home">
+    <article>
     <Search pokeList={pokeList} addPokemon={addPokemon}/>
+    </article>
+    <article>
     <ListaPokemon  pokeList={pokeList} />
+    </article>
   </section>
 };
 

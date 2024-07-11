@@ -49,8 +49,8 @@ const Search = ({ pokeList,addPokemon }) => {
   return (
     <section className="main">
         <div>
-          <label  htmlFor="keyword">Pokemon: </label>
-          <input ref={form} type="text" name="keyword" onChange={handleChange} />
+          <label  htmlFor="keyword"></label>
+          <input ref={form} type="text" name="keyword" placeholder='find your pokemon' onChange={handleChange} />
         </div>
           <i>{message}</i>
     </section>

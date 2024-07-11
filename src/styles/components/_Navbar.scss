@@ -1,0 +1,22 @@
+.nav {
+    width: 100%;
+    &>ul {
+        left: 0;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        &>li {
+            padding: 16px;
+            &:hover {
+                background-color: grey;
+                & a {
+                    color: black;
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
