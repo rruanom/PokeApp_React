@@ -1,7 +1,7 @@
 import React from "react";
-
 const Footer = () => {
-  return <div>Footer</div>;
+  return <footer>
+    Made by Roberto Ruano
+  </footer>;
 };
-
 export default Footer;
