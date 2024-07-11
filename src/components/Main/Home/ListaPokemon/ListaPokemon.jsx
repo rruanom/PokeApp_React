@@ -4,17 +4,21 @@ import { v4 as uuidv4 } from 'uuid';
 import PokeCard from './PokeCard'
 
 const ListaPokemon = ({ pokeList }) => {
+  const [renderItems, setRenderItems] = useState()
 
-  const renderItems = () =>
-    pokeList.map((item, i) => (
-      <PokeCard
-        key={uuidv4()}
-        pokemon={item}
-      />
-    ));
+  useEffect(() => {
+      if (pokeList.length !== 0) {
+       setRenderItems(pokeList.map((item, i) => (
+          <PokeCard
+            key={uuidv4()}
+            pokemon={item}
+          />
+        )))
+      }
+  }, [pokeList]);
 
   return <section>
-    {renderItems()}
+    {renderItems}
   </section>
 };
 

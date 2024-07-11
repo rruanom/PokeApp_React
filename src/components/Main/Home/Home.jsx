@@ -7,7 +7,7 @@ const Home = () => {
   const [pokeList, setPokeList] = useState([]);
 
   const addPokemon = (newPokemon) => {
-    setPokeList([...pokeList,newPokemon]);
+    setPokeList([newPokemon, ...pokeList]);
   }
 
   return <section className="home">
