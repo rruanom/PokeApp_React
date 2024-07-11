@@ -1,13 +1,15 @@
 import React from 'react';
 import '../PokeCard';
 export default function PokeCard({ pokemon: { name, id, sprites, types } }) {
-  console.log(name, id, sprites, types);
-  let name1 = name;
-  name1 = name1.charAt(0).toUpperCase() + name1.slice(1).toLowerCase();
+
   const id1 = id;
   const image1 = sprites.other["official-artwork"].front_default;
   const type1 = types[0].type.name;
   const type2 = types.length > 1 ? types[1].type.name : null;
+  let name1 = name;
+
+  name1 = name1.charAt(0).toUpperCase() + name1.slice(1).toLowerCase();//Para ponner la primera letra del nombre en mayuscula
+
   // Clase de tipo principal
   const typeClass = `type-${type1}`;
   return (
