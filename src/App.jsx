@@ -9,11 +9,11 @@ function App() {
   // Creamos la variable pokeList para tener la lista de pokemon buscados
   const [pokeList, setPokeList] = useState([]);
 
-  /* const addPokemon = (newPokemon) => {
+   const addPokemon = (newPokemon) => {
     setPokeList([newPokemon, ...pokeList]);
-  } */
+  } 
 
-  const listPokemon = { pokeList, setPokeList }
+  const listPokemon = { pokeList, addPokemon }
 
   return (
     <>

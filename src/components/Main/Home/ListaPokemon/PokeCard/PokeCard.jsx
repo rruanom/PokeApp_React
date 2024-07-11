@@ -1,5 +1,6 @@
 import React from 'react';
 import '../PokeCard';
+import image_default from '../../../../../assets/pokeball_default.png';
 export default function PokeCard({ pokemon: { name, id, sprites, types } }) {
 
   const id1 = id;
@@ -13,12 +14,14 @@ export default function PokeCard({ pokemon: { name, id, sprites, types } }) {
   // Clase de tipo principal
   const typeClass = `type-${type1}`;
   return (
+
     <div className={`pokeCard ${typeClass}`}>
       <div className="pokeId">nº{id1}</div>
       <div className="pokeName">{name1}</div>
-      <img src={image1} alt={name1} />
+      <img src={image1 || image_default} alt={name1} />
       <div className="pokeType">{type1}</div>
       {type2 && <div className="pokeType">{type2}</div>}
     </div>
+
   );
 }

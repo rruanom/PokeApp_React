@@ -5,23 +5,14 @@ import { ListContext } from "../../../context/ListContext";
 
 const Home = () => {
 
-  const {pokeList, setPokeList} = useContext(ListContext);
-  const [listaItems, setListaItems] = useState([])
-
-  useEffect(() => {
-    setPokeList(listaItems)
-  }, [listaItems]);
-
-  const addListaItems = (newPokemon) => {
-    setListaItems([newPokemon, ...listaItems]);
-  }
+  const {pokeList, addPokemon} = useContext(ListContext);
 
   return <section className="home">
     <article>
-    <Search pokeList={listaItems} addPokemon={addListaItems}/>
+    <Search pokeList={pokeList} addPokemon={addPokemon}/>
     </article>
     <article>
-    <ListaPokemon  pokeList={listaItems} />
+    <ListaPokemon  pokeList={pokeList} />
     </article>
   </section>
 };
