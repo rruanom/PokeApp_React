@@ -16,7 +16,7 @@ export default function PokeCard({ pokemon }) {
   const typeClass = `type-${type1}`;
 
   return (
-    <Link to={`/pokemon/${id}`} state={{ pokemon: pokemon }} className="pokemon-link">
+    <Link to={`/pokemon/${id}`} state={{ pokemon }} className="pokemon-link">
       <div className={`pokeCard ${typeClass}`}>
         <div className="pokeId">nº{id1}</div>
         <div className="pokeName">{name1}</div>
